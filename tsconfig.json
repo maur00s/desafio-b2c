@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es6",  // or "esnext"
+    "lib": ["dom", "es6"],  // update to es6 or esnext for modern JS features
+    "types": ["react", "react-dom", "cypress", "@testing-library/cypress"], // include react and react-dom types
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,  // Optionally set to true for strict type-checking
+    "noEmit": false,
+    "forceConsistentCasingInFileNames": true,
+    "module": "commonjs",  // use commonjs for better compatibility with Webpack
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "jsx": "react-jsx"
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"],  // make sure all source files are included
+  "exclude": ["node_modules", "cypress", "./cypress.config.ts"]
+}
