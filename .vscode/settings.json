@@ -2,14 +2,14 @@
     "files.exclude": {
       "**/.gitignore": true,
       "**/node_modules": true,
-      "**/package.json": false,
+      "**/package.json": true,
       "**/tsconfig.json": true,
       "**/vite.config.ts": true,
       "**/babel.config.js": true,
       "**/package-lock.json": true,
       "**/tsconfig.app.json": true,
       "**/tsconfig.node.json": true,
-      "**/webpack.config.js": false,
+      "**/webpack.config.js": true,
       "**/stryker.config.mjs": true,
     }
   }
