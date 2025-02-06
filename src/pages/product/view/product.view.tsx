@@ -1,25 +1,10 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import {
-  Box,
-  Title4,
-  Row,
-  LoadingScreen,
-} from "@telefonica/mistica";
-import { RowList } from "../../components";
+import React from "react";
+import { Box, Title4, Row, LoadingScreen } from "@telefonica/mistica";
+import { RowList } from "../../../components";
+import { productController } from "../controller/product.controller";
 
 export const Product: React.FC = () => {
-  const [isLoading, setIsLoading] = useState(false);
-  const navigate = useNavigate();
-
-  const handlePress = () => {
-    setIsLoading(true);
-
-    setTimeout(() => {
-      setIsLoading(false); 
-      navigate("/offer"); 
-    }, 2000);
-  };
+  const { isLoading, handlePress } = productController();
 
   return (
     <Box>
