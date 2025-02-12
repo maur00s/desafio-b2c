@@ -1,0 +1,82 @@
+{
+  "info": {
+    "title": "Almost there! Just confirm your information",
+    "firstRow": {
+      "title": "Line",
+      "detail": "(11) 91234-5678"
+    },
+    "secondRow": {
+      "title": "Credits",
+      "detail": "R$ 20"
+    },
+    "thirdRow": {
+      "title": "Service fee",
+      "detail": "R$ 5.99"
+    },
+    "fourthRow": {
+      "title": "Validity",
+      "detail": "30 days from the anticipation"
+    },
+    "calloutDescription": "You have R$ 15 pending, and it will be deducted from this Early Credit",
+    "terms": {
+      "text": "By confirming, you accept the ",
+      "textLink": "terms and conditions"
+    },
+    "loadingScreen": {
+      "title": "Please wait a moment",
+      "description": "Redirecting to the next step..."
+    }
+  },
+  "offer": {
+    "title": "Select your offer to continue",
+    "firstRow": {
+      "title": "R$ 15",
+      "subTitle": "+ R$ 5.99 service fee",
+      "description": "Offer valid until 16:27"
+    },
+    "secondRow": {
+      "title": "R$ 20",
+      "subTitle": "+ R$ 5.99 service fee",
+      "description": "Offer valid until 16:27"
+    },
+    "loadingScreen": {
+      "title": "Please wait a moment",
+      "description": "Redirecting to the next step..."
+    }
+  },
+  "product": {
+    "title": "Select a product to continue",
+    "preTurbo": {
+      "title": "Pre Turbo",
+      "description": "(11) 91234-5678"
+    },
+    "preDiario": {
+      "title": "Pre Daily",
+      "description": "(11) 93210-8765"
+    },
+    "preTurboSecond": {
+      "title": "Pre Turbo",
+      "description": "(11) 98756-1004"
+    },
+    "loadingScreen": {
+      "title": "Please wait a moment",
+      "description": "Redirecting to the next step..."
+    }
+  },
+  "error": {
+    "credit": {
+      "title": "We do not have Early Credit for you yet",
+      "description": "Try checking again later for offers or recharge now",
+      "button": "Go to Home",
+      "descriptionLink": "",
+      "buttonLink": "Recharge"
+    },
+    "service": {
+      "title": "You have R$ 15 pending for services or promotions",
+      "description": "By continuing, they will be deducted from this Credit. You can check the pending amounts in your",
+      "descriptionLink": "future statements",
+      "button": "Continue",
+      "buttonLink": "Go back"
+    }
+  }
+}

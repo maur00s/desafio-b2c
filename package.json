@@ -7,7 +7,7 @@
     "build": "webpack --mode production"
   },
   "keywords": [],
-  "author": "Matheus Durão",
+  "author": "Mauricio Reis",
   "license": "ISC",
   "description": "",
   "dependencies": {

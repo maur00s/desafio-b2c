@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import App from "./App/App";
 import { ThemeContextProvider } from "@telefonica/mistica";
 import { theme } from "./theme/theme";
-
+import "../i18n"; 
 
 const rootElement = document.getElementById("root");
 

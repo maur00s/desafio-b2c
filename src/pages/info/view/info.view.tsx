@@ -2,56 +2,58 @@ import React from "react";
 import { Box, Title4, Row, IconWarningRegular, LoadingScreen } from "@telefonica/mistica";
 import { RowList, Callout, TermsAndCondition } from "../../../components";
 import { infoController } from "../controller/info.controller";
+import { useTranslation } from "react-i18next";
 
 export const Info: React.FC = () => {
   const { isLoading, handlePress, handleNavigateHome } = infoController();
+  const { t } = useTranslation("info");
 
   return (
     <Box>
       {isLoading && (
         <LoadingScreen
-          title="Aguarde um momento"
-          description="Redirecionando para a página inicial..."
+          title={t("loadingScreen.title")}
+          description={t("loadingScreen.description")}
         />
       )}
       <Box padding={16}>
-        <Title4 as="h2">Quase lá! Só falta confirmar suas informações</Title4>
+        <Title4 as="h2">{t("title")}</Title4>
       </Box>
       <RowList>
         <Row
-          title="Linha"
+          title={t("fisrtRow.title")}
+          detail={t("fisrtRow.detail")}
           withChevron={false}
-          detail="(11) 91234-5678"
           onPress={handleNavigateHome}
         />
         <Row
+          title={t("secondRow.title")}
+          detail={t("secondRow.detail")}
           withChevron={false}
-          title="Créditos"
-          detail="R$ 20"
           onPress={handlePress}
         />
         <Row
+          title={t("thirdRow.title")}
+          detail={t("thirdRow.detail")}
           withChevron={false}
-          title="Taxa de serviço"
-          detail="R$ 5,99"
           onPress={handlePress}
         />
         <Row
+          title={t("fourthRow.title")}
+          detail={t("fourthRow.detail")}
           withChevron={false}
-          title="Validade"
-          detail="30 dias a partir da antecipação"
           onPress={handlePress}
         />
       </RowList>
       <Box paddingTop={16}>
         <Callout
           asset={<IconWarningRegular />}
-          description="Existem R$ 15 pendentes e eles vão ser debitados desse Crédito Antecipado"
+          description={t("calloutDescription")}
         />
       </Box>
       <TermsAndCondition
-        text="Ao confirmar, você aceita os "
-        textLink="termos e condições"
+        text={t("terms.text")}
+        textLink={t("terms.textLink")}
         linkUrl="https://github.com/maur00s/desafio-b2c"
       />
     </Box>

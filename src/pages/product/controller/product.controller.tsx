@@ -10,6 +10,16 @@ export const productController = () => {
 
     setTimeout(() => {
       setIsLoading(false);
+      navigate("/error-service");
+    }, 2000);
+  };
+
+
+  const handleNextPage = () => {
+    setIsLoading(true);
+
+    setTimeout(() => {
+      setIsLoading(false);
       navigate("/offer");
     }, 2000);
   };
@@ -17,5 +27,6 @@ export const productController = () => {
   return {
     isLoading,
     handlePress,
+    handleNextPage
   };
 };

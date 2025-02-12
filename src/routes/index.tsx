@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { Product, Offer, Info } from "../pages"; 
+import { Product, Offer, Info, Error } from "../pages"; 
 
 const RoutesComponent: React.FC = () => {
   return (
@@ -9,6 +9,8 @@ const RoutesComponent: React.FC = () => {
         <Route path="/product" element={<Product />} />
         <Route path="/offer" element={<Offer />} />
         <Route path="/info" element={<Info />} />
+        <Route path="/error-credit" element={<Error variant="credit" />} />
+        <Route path="/error-service" element={<Error variant="service" />} />
     </Routes>
   );
 };

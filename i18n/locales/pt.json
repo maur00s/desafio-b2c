@@ -1,0 +1,81 @@
+{
+    "info":{
+        "title":"Quase lá! Só falta confirmar suas informações",
+        "fisrtRow":{
+            "title": "Linha",
+            "detail": "(11) 91234-5678"
+        },
+        "secondRow":{
+            "title": "Créditos",
+            "detail": "R$ 20"
+        },
+        "thirdRow":{
+            "title": "Taxa de serviço",
+            "detail": "R$ 5,99"
+        },
+        "fourthRow":{
+            "title": "Validade",
+            "detail": "30 dias a partir da antecipação"
+        },
+        "calloutDescription": "Existem R$ 15 pendentes e eles vão ser debitados desse Crédito Antecipado",
+        "terms":{
+            "text": "Ao confirmar, você aceita os ",
+            "textLink": "termos e condições"
+        },
+        "loadingScreen" : {
+            "title": "Aguarde um momento",
+            "description": "Redirecionando para a próxima etapa..."
+        }
+    },
+    "offer":{
+        "title": "Selecione sua oferta pra continuar",
+        "firstRow": {
+            "title": "R$ 15",
+            "subTitle": "+ R$ 5,99 de taxa de serviço",
+            "description": "Oferta válida até 16h27"
+        },
+        "secondRow": {
+            "title": "R$ 20",
+            "subTitle": "+ R$ 5,99 de taxa de serviço",
+            "description": "Oferta válida até 16h27"
+        },
+        "loadingScreen" : {
+            "title": "Aguarde um momento",
+            "description": "Redirecionando para a próxima etapa..."
+        }
+    },
+    "product": {
+        "title": "Selecione um produto para continuar",
+        "preTurbo":{
+            "title":"Pré Turbo",
+            "description": "(11) 91234-5678"
+        },
+        "preDiario":{
+            "title":"Pré Diário",
+            "description": "(11) 93210-8765"
+        },
+        "preTurboSecond":{
+            "title":"Pré Turbo",
+            "description":"(11) 98756-1004"
+        },
+        "loadingScreen" : {
+            "title": "Aguarde um momento",
+            "description": "Redirecionando para a próxima etapa..."
+        }
+    },
+    "error":{
+        "credit":{
+            "title": "Ainda não temos Cŕedito Antecipado para você",
+            "description": "Tente verificar em outro momento se exitem ofertas ou faça uma recarga agora",
+            "button": "Ir para o inicío",
+            "buttonLink": "Fazer recarga"
+        },
+        "service":{
+            "title": "Existem R$ 15 pendentes de serviços ou promoções",
+            "description": "Ao continuar, eles vão ser descontados desse Crédito. Você pode conferir valores pendnes nos seus",
+            "descriptionLink": "lançamentos futuros",
+            "button": "Continuar",
+            "buttonLink": "Voltar"
+        }
+    }
+}

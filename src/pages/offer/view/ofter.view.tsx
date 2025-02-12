@@ -2,21 +2,36 @@ import React from "react";
 import { Box, Title4, Row, LoadingScreen } from "@telefonica/mistica";
 import { RowList } from "../../../components";
 import { offerController } from "../controller/offer.controller";
+import { useTranslation } from "react-i18next";
 
 export const Offer: React.FC = () => {
-  const { isLoading, handlePress } = offerController();
+  const { isLoading, handlePress, handleNextPage } = offerController();
+  const { t } = useTranslation("offer");
 
   return (
     <Box>
       {isLoading && (
-        <LoadingScreen title="Aguarde um momento" description="Redirecionando para a próxima etapa..." />
+        <LoadingScreen
+          title={t("loadingScreen.title")}
+          description={t("loadingScreen.description")}
+        />
       )}
       <Box padding={16}>
-        <Title4 as="h2">Selecione sua oferta pra continuar</Title4>
+        <Title4 as="h2">{t("title")}</Title4>
       </Box>
       <RowList>
-        <Row title="R$ 15" subtitle="+ R$ 5,99 de taxa de serviço" description="Oferta válida até 16h27" onPress={handlePress} />
-        <Row title="R$ 20" subtitle="+ R$ 5,99 de taxa de serviço" description="Oferta válida até 16h27" onPress={handlePress} />
+        <Row
+          title={t("firstRow.title")}
+          subtitle={t("firstRow.subTitle")}
+          description={t("firstRow.description")}
+          onPress={handleNextPage}
+        />
+        <Row
+          title={t("secondRow.title")}
+          subtitle={t("secondRow.subTitle")}
+          description={t("secondRow.description")}
+          onPress={handlePress}
+        />
       </RowList>
     </Box>
   );

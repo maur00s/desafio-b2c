@@ -2,7 +2,7 @@ import React from "react";
 import { Callout as MisticaCallout } from "@telefonica/mistica";
 
 interface CalloutProps {
-  description: string;
+  description?: string | any;
   asset?: string | any;
 }
 

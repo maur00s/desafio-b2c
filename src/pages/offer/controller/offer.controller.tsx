@@ -10,12 +10,23 @@ export const offerController = () => {
 
     setTimeout(() => {
       setIsLoading(false);
+      navigate("/error-service");
+    }, 2000);
+  };
+
+  const handleNextPage = () => {
+    setIsLoading(true);
+
+    setTimeout(() => {
+      setIsLoading(false);
       navigate("/info");
     }, 2000);
   };
 
+
   return {
     isLoading,
     handlePress,
+    handleNextPage
   };
 };
