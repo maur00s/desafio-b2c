@@ -1,81 +1,84 @@
 {
-    "info":{
-        "title":"Quase lá! Só falta confirmar suas informações",
-        "fisrtRow":{
-            "title": "Linha",
-            "detail": "(11) 91234-5678"
-        },
-        "secondRow":{
-            "title": "Créditos",
-            "detail": "R$ 20"
-        },
-        "thirdRow":{
-            "title": "Taxa de serviço",
-            "detail": "R$ 5,99"
-        },
-        "fourthRow":{
-            "title": "Validade",
-            "detail": "30 dias a partir da antecipação"
-        },
-        "calloutDescription": "Existem R$ 15 pendentes e eles vão ser debitados desse Crédito Antecipado",
-        "terms":{
-            "text": "Ao confirmar, você aceita os ",
-            "textLink": "termos e condições"
-        },
-        "loadingScreen" : {
-            "title": "Aguarde um momento",
-            "description": "Redirecionando para a próxima etapa..."
-        }
+    "info": {
+      "title": "Almost there! Just confirm your information",
+      "firstRow": {
+        "title": "Line",
+        "detail": "(11) 91234-5678"
+      },
+      "secondRow": {
+        "title": "Credits",
+        "detail": "R$ 20"
+      },
+      "thirdRow": {
+        "title": "Service fee",
+        "detail": "R$ 5.99"
+      },
+      "fourthRow": {
+        "title": "Validity",
+        "detail": "30 days from the anticipation"
+      },
+      "calloutDescription": "You have R$ 15 pending, and they will be deducted from this Early Credit",
+      "terms": {
+        "text": "By confirming, you accept the ",
+        "textLink": "terms and conditions",
+        "detail": "total",
+        "value": "R$ 25.99",
+        "buttonText": "Continue"
+      },
+      "loadingScreen": {
+        "title": "Please wait a moment",
+        "description": "Redirecting to the next step..."
+      }
     },
-    "offer":{
-        "title": "Selecione sua oferta pra continuar",
-        "firstRow": {
-            "title": "R$ 15",
-            "subTitle": "+ R$ 5,99 de taxa de serviço",
-            "description": "Oferta válida até 16h27"
-        },
-        "secondRow": {
-            "title": "R$ 20",
-            "subTitle": "+ R$ 5,99 de taxa de serviço",
-            "description": "Oferta válida até 16h27"
-        },
-        "loadingScreen" : {
-            "title": "Aguarde um momento",
-            "description": "Redirecionando para a próxima etapa..."
-        }
+    "offer": {
+      "title": "Select your offer to continue",
+      "firstRow": {
+        "title": "R$ 15",
+        "subTitle": "+ R$ 5.99 service fee",
+        "description": "Offer valid until 16:27"
+      },
+      "secondRow": {
+        "title": "R$ 20",
+        "subTitle": "+ R$ 5.99 service fee",
+        "description": "Offer valid until 16:27"
+      },
+      "loadingScreen": {
+        "title": "Please wait a moment",
+        "description": "Redirecting to the next step..."
+      }
     },
     "product": {
-        "title": "Selecione um produto para continuar",
-        "preTurbo":{
-            "title":"Pré Turbo",
-            "description": "(11) 91234-5678"
-        },
-        "preDiario":{
-            "title":"Pré Diário",
-            "description": "(11) 93210-8765"
-        },
-        "preTurboSecond":{
-            "title":"Pré Turbo",
-            "description":"(11) 98756-1004"
-        },
-        "loadingScreen" : {
-            "title": "Aguarde um momento",
-            "description": "Redirecionando para a próxima etapa..."
-        }
+      "title": "Select a product to continue",
+      "preTurbo": {
+        "title": "Pre Turbo",
+        "description": "(11) 91234-5678"
+      },
+      "preDiario": {
+        "title": "Pre Daily",
+        "description": "(11) 93210-8765"
+      },
+      "preTurboSecond": {
+        "title": "Pre Turbo",
+        "description": "(11) 98756-1004"
+      },
+      "loadingScreen": {
+        "title": "Please wait a moment",
+        "description": "Redirecting to the next step..."
+      }
     },
-    "error":{
-        "credit":{
-            "title": "Ainda não temos Cŕedito Antecipado para você",
-            "description": "Tente verificar em outro momento se exitem ofertas ou faça uma recarga agora",
-            "button": "Ir para o inicío",
-            "buttonLink": "Fazer recarga"
-        },
-        "service":{
-            "title": "Existem R$ 15 pendentes de serviços ou promoções",
-            "description": "Ao continuar, eles vão ser descontados desse Crédito. Você pode conferir valores pendnes nos seus",
-            "descriptionLink": "lançamentos futuros",
-            "button": "Continuar",
-            "buttonLink": "Voltar"
-        }
+    "error": {
+      "credit": {
+        "title": "We do not have Early Credit for you yet",
+        "description": "Try checking again later for offers or recharge now",
+        "button": "Go to Home",
+        "buttonLink": "Recharge"
+      },
+      "service": {
+        "title": "You have R$ 15 pending for services or promotions",
+        "description": "By continuing, they will be deducted from this Credit. You can check the pending amounts in your",
+        "descriptionLink": "future statements",
+        "button": "Continue",
+        "buttonLink": "Go back"
+      }
     }
-}
+  }

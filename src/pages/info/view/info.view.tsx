@@ -53,7 +53,10 @@ export const Info: React.FC = () => {
       </Box>
       <TermsAndCondition
         text={t("terms.text")}
+        detail={t("terms.detail")}
+        value={t("terms.value")}
         textLink={t("terms.textLink")}
+        buttonText={t("terms.buttonText")}
         linkUrl="https://github.com/maur00s/desafio-b2c"
       />
     </Box>

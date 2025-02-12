@@ -11,15 +11,22 @@ import {
 
 interface TermsAndConditionProps {
   text: string;
+  detail: string;
+  value: string;
   textLink: string;
   linkUrl: string;
+  buttonText: string;
 }
 
 export const TermsAndCondition: React.FC<TermsAndConditionProps> = ({
   text,
-  textLink,
+  value,
+  detail,
   linkUrl,
+  textLink,
+  buttonText
 }) => {
+
   return (
     <FixedFooterLayout
       footer={
@@ -52,11 +59,11 @@ export const TermsAndCondition: React.FC<TermsAndConditionProps> = ({
                   flexDirection: "column",
                 }}
               >
-                <Text1 medium>Total</Text1>
-                <Text2 medium>R$ 25,99</Text2>
+                <Text1 medium>{detail}</Text1>
+                <Text2 medium>{value}</Text2>
               </div>
               <ButtonPrimary onPress={() => console.log("Cliquei")}>
-                Continuar
+                {buttonText}
               </ButtonPrimary>
             </div>
           </ResponsiveLayout>
