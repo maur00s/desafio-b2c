@@ -17,6 +17,7 @@ export const Error: React.FC<ErrorProps> = ({ variant }) => {
         description={t(`${variant}.description`)}
         textButton={t(`${variant}.button`)}
         textButtonLink={t(`${variant}.buttonLink`)}
+        textLink={variant === "service" ? t(`service.descriptionLink`) : undefined}
       />
     </Box>
   );

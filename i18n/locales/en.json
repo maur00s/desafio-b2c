@@ -17,10 +17,13 @@
       "title": "Validity",
       "detail": "30 days from the anticipation"
     },
-    "calloutDescription": "You have R$ 15 pending, and it will be deducted from this Early Credit",
+    "calloutDescription": "You have R$ 15 pending, and they will be deducted from this Early Credit",
     "terms": {
       "text": "By confirming, you accept the ",
-      "textLink": "terms and conditions"
+      "textLink": "terms and conditions",
+      "detail": "total",
+      "value": "R$ 25.99",
+      "buttonText": "Continue"
     },
     "loadingScreen": {
       "title": "Please wait a moment",
@@ -68,7 +71,6 @@
       "title": "We do not have Early Credit for you yet",
       "description": "Try checking again later for offers or recharge now",
       "button": "Go to Home",
-      "descriptionLink": "",
       "buttonLink": "Recharge"
     },
     "service": {
