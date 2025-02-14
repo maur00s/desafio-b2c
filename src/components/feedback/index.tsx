@@ -15,7 +15,8 @@ interface FeedbackScreenProps {
   linkUrl?: string;
   textLink?: string;
   textButtonLink: boolean | any;
-  onButtonPress?: () => void;
+  onButtonPress?: () => void;  
+  onButtonPressLink?: () => void;  
 }
 
 export const FeedbackScreen: React.FC<FeedbackScreenProps> = ({
@@ -26,11 +27,12 @@ export const FeedbackScreen: React.FC<FeedbackScreenProps> = ({
   description,
   onButtonPress,
   textButtonLink,
+  onButtonPressLink
 }) => {
   return (
     <MisticaInfoFeedbackScreen
       title={title}
-      link={<ButtonLink onPress={() => {}}>{textButtonLink}</ButtonLink>}
+      link={<ButtonLink onPress={onButtonPressLink || (() => {})}>{textButtonLink}</ButtonLink>}
       extra={
         <Box>
           <Text3 medium>

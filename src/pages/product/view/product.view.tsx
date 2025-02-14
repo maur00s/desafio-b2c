@@ -5,7 +5,7 @@ import { productController } from "../controller/product.controller";
 import { useTranslation } from "react-i18next";
 
 export const Product: React.FC = () => {
-  const { isLoading, handlePress, handleNextPage } = productController();
+  const { isLoading, handlePress } = productController();
   const { t } = useTranslation("product");
 
   return (
@@ -23,17 +23,17 @@ export const Product: React.FC = () => {
         <Row
           title={t("preTurbo.title")}
           description={t("preTurbo.description")}
-          onPress={handleNextPage}
+           onPress={() => handlePress("has_score")}
         />
         <Row
           title={t("preDiario.title")}
           description={t("preDiario.description")}
-          onPress={handleNextPage}
+           onPress={() => handlePress("has_score")}
         />
         <Row
           title={t("preTurboSecond.title")}
           description={t("preTurboSecond.description")}
-          onPress={handlePress}
+          onPress={() => handlePress("has_score_false")}
         />
       </RowList>
     </Box>

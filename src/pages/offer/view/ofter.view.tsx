@@ -5,7 +5,7 @@ import { offerController } from "../controller/offer.controller";
 import { useTranslation } from "react-i18next";
 
 export const Offer: React.FC = () => {
-  const { isLoading, handlePress, handleNextPage } = offerController();
+  const { isLoading, handlePress } = offerController();
   const { t } = useTranslation("offer");
 
   return (
@@ -24,13 +24,13 @@ export const Offer: React.FC = () => {
           title={t("firstRow.title")}
           subtitle={t("firstRow.subTitle")}
           description={t("firstRow.description")}
-          onPress={handleNextPage}
-        />
+          onPress={() => handlePress("has_peding_values")}
+          />
         <Row
           title={t("secondRow.title")}
           subtitle={t("secondRow.subTitle")}
           description={t("secondRow.description")}
-          onPress={handlePress}
+          onPress={() => handlePress("has_peding_values_false")}
         />
       </RowList>
     </Box>

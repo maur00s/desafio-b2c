@@ -1,0 +1,32 @@
+{
+    "score": {
+      "has_score": true,
+      "has_score_false": false
+    },
+    "pending-values": {
+      "has_peding_values": true,
+      "has_peding_values_false": false,
+      "total_value": 15
+    },
+    "offers": [
+      {
+        "id": "1",
+        "price": "100.00",
+        "tax_price": "10.00",
+        "expiration": "2025-12-31",
+        "total_price": "110.00",
+        "line_number": "001",
+        "validity": "30 dias"
+      },
+      {
+        "id": "2",
+        "price": "200.00",
+        "tax_price": "20.00",
+        "expiration": "2025-12-31",
+        "total_price": "220.00",
+        "line_number": "002",
+        "validity": "60 dias"
+      }
+    ]
+  }
+  
